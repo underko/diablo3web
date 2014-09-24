@@ -1,0 +1,40 @@
+<!--Load the AJAX API-->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+
+	// Load the Visualization API and the piechart package.
+	google.load('visualization', '1.0', {'packages':['corechart']});
+
+	// Set a callback to run when the Google Visualization API is loaded.
+	google.setOnLoadCallback(drawChart);
+
+	// Callback that creates and populates a data table,
+	// instantiates the pie chart, passes in the data and
+	// draws it.
+	function drawChart() {
+
+		var data = google.visualization.arrayToDataTable([
+		  ['Class', 'Play Time', { role: 'style' }],
+		  ['Barbarian',  	1000,	'#FF0000'],
+		  ['Crusader',  	1170,   '#F8F8F8'],
+		  ['Demon Hunter',  660,    '#00FF00'],
+		  ['Monk',  		1030,   '#FF9900'],
+		  ['Witch Doctor',  1030,   '#009900'],
+		  ['Wizard',  		1030,   '#00CCFF']
+		]);
+
+		var options = {
+			'title': 'Class Playtime',
+			'width': 500,
+			'height': 250
+		};
+
+		// Instantiate and draw our chart, passing in some options.
+		var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+		chart.draw(data, options);
+		
+		var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
+		chart.draw(data, options);
+	}
+	
+	</script>

@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'exocetlight';
+    src: url('./resource/exocet/exocet2-webfont.eot');
+    src: url('./resource/exocet/exocet2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./resource/exocet/exocet2-webfont.woff') format('woff'),
+         url('./resource/exocet/exocet2-webfont.tff') format('truetype'),
+         url('./resource/exocet/exocet2-webfont.svg#exocetlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	width: 1000px;
+	background-color: #E5E4E2;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#header, #footer {
+	background: #505050;
+	font-size: 18px;
+	font-family: 'exocetlight';
+    
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	
+	width: 1000px;
+	
+	margin-left: auto;
+    	margin-right: auto;
+}
+
+#wrapper {
+	min-height: 100%;
+}
+
+#header {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+#content {
+	float: left;
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #505050;
+	
+}
+
+#chart_hcParagon, #chart_killsMonsterHc, #chart_killsElite {
+	float: left;
+	height: 250px;
+	width: 500px;
+	margin-bottom: 1px;
+}
+
+#chart_scParagon, #chart_killsMonsterSc, #chart_PlayTime {
+	float: right;
+	height: 250px;
+	width: 500px;
+	margin-bottom: 1px;
+}
+
+#footer {
+	clear: both;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	border-top:  1px solid #E5E4E2;
+}
+
+#menu {
+	
+}
+
+#menu_ul {
+	float: left;
+	width: 1000px;
+	padding: 0;
+	margin: auto;
+}
+
+#menu_item, #menu_item_home, #menu_item_last {
+	float: left;
+	width: 200px;
+	font-family: 'exocetlight';
+   	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background-color: #505050;
+	padding: 5px;
+	border-right: 1px solid #E5E4E2;
+	margin-bottom: 1px;
+}
+
+#menu_item_home {
+	width: 146px;
+}
+
+#menu_item_last {
+    border-right: 0px;
+}
+
+#menu_item:hover, #menu_item_home:hover, #menu_item_last:hover {
+	background-color: #ff3300;
+}
+
+li {
+	display:inline;
+}
+
+#char_div_hc, #char_div_sc, #char_div_hc_seasonal, #char_div_sc_seasonal {
+	width: 470px;
+	text-align: left;
+	padding: 10px;
+	margin: auto;
+	margin: 5px;
+}
+
+#char_div_hc {
+	background-color: #990000;
+	float: right;
+}
+
+#char_div_sc {
+	background-color: grey;
+	float: left;
+}
+
+#char_div_hc_seasonal {
+	background-color: #005200;
+	float: right;
+}
+
+#char_div_sc_seasonal {
+	background-color: #52CC52;
+	float: left;
+}
+
+#char_header {
+	width: 980px;
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	margin: auto;
+	background-color: grey;
+	margin: 5px;	
+}
+
+#char_header_sc, #char_header_hc {
+	width: 480px;
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	margin: auto;
+	background-color: grey;
+	margin: 5px;	
+}
+
+#char_header_hc {
+	float: right;
+	vertical-align: right;
+}
+
+/*Season page*/
+
+#season_hc_title,
+#season_sc_title,
+#hc_title,
+#sc_title {
+	width: 980px;
+	height: 20px;
+	font-family: 'exocetlight';
+   	font-size: 22px;
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	margin: auto;
+	background-color: grey;
+	margin: 5px;
+}
+
+#barbarian_hc_season, 
+#crusader_hc_season, 
+#demon_hunter_hc_season, 
+#monk_hc_season, 
+#witch_doctor_hc_season, 
+#wizard_hc_season,
+
+#barbarian_sc_season, 
+#crusader_sc_season, 
+#demon_hunter_sc_season, 
+#monk_sc_season, 
+#witch_doctor_sc_season, 
+#wizard_sc_season,
+
+#barbarian_hc, 
+#crusader_hc, 
+#demon_hunter_hc, 
+#monk_hc, 
+#witch_doctor_hc, 
+#wizard_hc,
+
+#barbarian_sc, 
+#crusader_sc, 
+#demon_hunter_sc, 
+#monk_sc, 
+#witch_doctor_sc, 
+#wizard_sc {
+	width: 152px;
+	height: 450px;
+	text-align: left;
+	padding: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	margin: auto;
+	background-color: grey;
+	margin: 5px;
+}
